@@ -1,0 +1,154 @@
+
+    .bubble-text {
+        position: relative;
+        width: 100%;
+        padding: 30px;
+        background: white;
+        box-shadow: 6px 6px 20px #3a49a11e;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        margin-top: 30px;
+        line-height: 24px;
+        z-index: -1;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .triangle {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid white;
+        border-right: 20px solid transparent;
+        filter: drop-shadow(6px 6px 20px rgba(0, 0, 0, 0.2));
+    }
+
+    .closed {
+        margin-top: -200px;
+        opacity: 0;
+        transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .rotate {
+        transform: rotate(45deg);
+    }
+
+    @media screen and (max-width: 650px) {
+        .closed {
+            margin-top: -400px;
+        }
+    }
+
+
+
+
+
+    .address-headline {
+        color: #F97F34;
+        font-weight: bold;
+        font-size: 28pt;
+        margin-bottom: 20px;
+    }
+    .overlay {
+        width: 100%;
+        height: 100vh;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background: rgba(0,0,0,0.5);
+        box-sizing: border-box;
+        position: fixed;
+        overflow: auto;
+        z-index: 9999999;
+        top: 0;
+        display: none;
+    }
+    .address {
+        background: white;
+        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 80px;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+    }
+    .branch {
+        text-align: left;
+        width: 45%;
+        display: inline-block;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .branch p {
+        font-size: 14pt;
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 800px) {
+        .address {
+            width: 96%;
+            padding: 10%;
+        }
+        .branch {
+            width: 100%;
+        }
+    }
+    .branch-headline {
+        color: #3A4AA1;
+        font-weight: bold;
+        font-size: 16pt;
+        margin-top: 40px;
+    }
+    .closepopup {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+    .imageopoup {
+        background: white;
+        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+    }
+    .rate {
+        width: 100%;
+    }
+    @media screen and (max-width: 800px) {
+        .imageopoup {
+            width: 96%;
+            padding: 2%;
+        }
+    }
+
+    .block{
+        display: block;
+    }
+
+    #margin {
+        margin-left: 96px;
+    }
+    @media screen and (max-width: 980px) {
+        #margin {
+            margin-left: 48px;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        #margin {
+            margin-left: 0px;
+        }
+    }
