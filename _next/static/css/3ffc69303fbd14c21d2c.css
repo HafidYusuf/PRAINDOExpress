@@ -761,7 +761,8 @@ footer .seemore {
 	}
 	.header .right.active {
 		transform: translateY(-4px);
-		background-color: #fff
+        background-color: #fff;
+        padding-bottom: 30px;
 	}
 	.header .right select {
 		margin: 0 0 24px
